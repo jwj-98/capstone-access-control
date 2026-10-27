@@ -1,0 +1,14 @@
+# 보안: Firebase 키는 커밋하지 않음
+google-services.json
+serviceAccountKey.json
+*firebase-adminsdk*.json
+# Android 빌드 산출물
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
+# Python
+__pycache__/
+barcodes.csv
+raspberry-pi/qr/

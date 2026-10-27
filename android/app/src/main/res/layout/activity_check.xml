@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/darkIv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/backg" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/logo2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/round_tv"
+                android:ems="10"
+                android:fontFamily="@font/nanumbarungothic"
+                android:hint="장소코드"
+                android:padding="5dp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/round_tv"
+                android:ems="10"
+                android:fontFamily="@font/nanumbarungothic"
+                android:hint="비밀번호( 관리자용 )"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:visibility="invisible" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btn_check"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_btn"
+                android:fontFamily="@font/nanumbarungothic"
+                android:text="CHECK"
+                android:textSize="14dp"
+                android:textStyle="normal|bold"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/qr_Iv"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="75dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/auth" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>
